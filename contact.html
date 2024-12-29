@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Innovate3D-Labs</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- GSAP für Animationen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle" aria-label="Theme Toggle">
+            <i class="ri-sun-line light-icon"></i>
+            <i class="ri-moon-line dark-icon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/" class="logo-text">Innovate3D-Labs</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">Über uns</a>
+                <a href="services.html" class="nav-link">Dienstleistungen</a>
+                <a href="partner.html" class="nav-link">Partner</a>
+                <a href="software.html" class="nav-link">Software</a>
+                <a href="contact.html" class="nav-link active">Kontakt</a>
+            </div>
+
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Kontakt">Kontakt</h1>
+            <p class="hero-subtitle">Sprechen Sie mit uns</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info glass-card">
+                    <h2>Kontaktinformationen</h2>
+                    <div class="info-items">
+                        <div class="contact-info-item">
+                            <i class="ri-map-pin-line"></i>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>Musterstraße 123<br>12345 München</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="ri-phone-line"></i>
+                            <div>
+                                <h3>Telefon</h3>
+                                <p>+49 (0) 123 456789</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="ri-mail-line"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@innovate3d-labs.de</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="ri-time-line"></i>
+                            <div>
+                                <h3>Öffnungszeiten</h3>
+                                <p>Mo-Fr: 9:00 - 18:00<br>Sa: 10:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+                            <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                            <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                            <a href="#" class="social-link"><i class="ri-twitter-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form glass-card">
+                    <h2>Nachricht senden</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Ihr Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Ihre Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <select id="subject" required>
+                                <option value="">Betreff wählen</option>
+                                <option value="support">Technischer Support</option>
+                                <option value="sales">Verkauf</option>
+                                <option value="other">Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" placeholder="Ihre Nachricht" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Nachricht senden</span>
+                            <i class="ri-send-plane-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container glass-card">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><i class="ri-mail-line"></i> info@innovate3d-labs.de</li>
+                        <li><i class="ri-phone-line"></i> +49 (0) 123 456789</li>
+                        <li><i class="ri-map-pin-line"></i> München, Deutschland</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="/impressum">Impressum</a></li>
+                        <li><a href="/datenschutz">Datenschutz</a></li>
+                        <li><a href="/agb">AGB</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize map
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('map').setView([48.137154, 11.576124], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            L.marker([48.137154, 11.576124]).addTo(map)
+                .bindPopup('Innovate3D-Labs<br>Musterstraße 123<br>12345 München')
+                .openPopup();
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically handle the form submission
+            alert('Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

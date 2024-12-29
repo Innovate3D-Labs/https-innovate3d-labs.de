@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - Innovate3D-Labs</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- GSAP für Animationen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle" aria-label="Theme Toggle">
+            <i class="ri-sun-line light-icon"></i>
+            <i class="ri-moon-line dark-icon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/" class="logo-text">Innovate3D-Labs</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">Über uns</a>
+                <a href="services.html" class="nav-link">Dienstleistungen</a>
+                <a href="partner.html" class="nav-link">Partner</a>
+                <a href="software.html" class="nav-link active">Software</a>
+                <a href="contact.html" class="nav-link">Kontakt</a>
+            </div>
+
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Software">Software</h1>
+            <p class="hero-subtitle">Innovative Lösungen für 3D-Druck</p>
+        </div>
+    </section>
+
+    <!-- Software Content -->
+    <section class="software-content">
+        <div class="container">
+            <!-- Main Software -->
+            <div class="section-header">
+                <span class="section-tag">Unsere Software</span>
+                <h2 class="section-title">Professionelle Tools</h2>
+            </div>
+
+            <div class="software-grid">
+                <div class="software-card glass-card" data-tilt>
+                    <div class="software-icon">
+                        <i class="ri-window-line"></i>
+                    </div>
+                    <div class="software-info">
+                        <h3>Innovate OS</h3>
+                        <p>Das innovative Betriebssystem für 3D-Drucker</p>
+                        <ul class="software-features">
+                            <li><i class="ri-check-line"></i> Echtzeit-Drucküberwachung</li>
+                            <li><i class="ri-check-line"></i> KI-gestützte Fehlerkorrektur</li>
+                            <li><i class="ri-check-line"></i> Multi-Drucker Management</li>
+                            <li><i class="ri-check-line"></i> Remote-Steuerung</li>
+                            <li><i class="ri-check-line"></i> Automatische Updates</li>
+                        </ul>
+                        <div class="software-actions">
+                            <a href="#" class="btn btn-primary">Demo testen</a>
+                            <a href="#" class="btn btn-outline">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="software-card glass-card" data-tilt>
+                    <div class="software-icon">
+                        <i class="ri-shape-2-line"></i>
+                    </div>
+                    <div class="software-info">
+                        <h3>3D Model Creator Pro</h3>
+                        <p>Professionelle 3D-Modellierungssoftware für Ihre Projekte</p>
+                        <ul class="software-features">
+                            <li><i class="ri-check-line"></i> Intuitive Benutzeroberfläche</li>
+                            <li><i class="ri-check-line"></i> Umfangreiche Werkzeugpalette</li>
+                            <li><i class="ri-check-line"></i> Echtzeit-Vorschau</li>
+                            <li><i class="ri-check-line"></i> Cloud-Speicher Integration</li>
+                            <li><i class="ri-check-line"></i> Automatische Updates</li>
+                        </ul>
+                        <div class="software-actions">
+                            <a href="#" class="btn btn-primary">Demo testen</a>
+                            <a href="#" class="btn btn-outline">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="software-card glass-card" data-tilt>
+                    <div class="software-icon">
+                        <i class="ri-printer-cloud-line"></i>
+                    </div>
+                    <div class="software-info">
+                        <h3>Print Flow Manager</h3>
+                        <p>Optimieren Sie Ihren 3D-Druck Workflow</p>
+                        <ul class="software-features">
+                            <li><i class="ri-check-line"></i> Druckerwarteschlange</li>
+                            <li><i class="ri-check-line"></i> Materialverwaltung</li>
+                            <li><i class="ri-check-line"></i> Qualitätsüberwachung</li>
+                            <li><i class="ri-check-line"></i> Fehleranalyse</li>
+                            <li><i class="ri-check-line"></i> Statistiken & Berichte</li>
+                        </ul>
+                        <div class="software-actions">
+                            <a href="#" class="btn btn-primary">Demo testen</a>
+                            <a href="#" class="btn btn-outline">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="features-section">
+                <div class="section-header">
+                    <span class="section-tag">Features</span>
+                    <h2 class="section-title">Warum unsere Software?</h2>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card glass-card" data-tilt>
+                        <i class="ri-shield-check-line"></i>
+                        <h3>Sicherheit</h3>
+                        <p>Höchste Sicherheitsstandards für Ihre Daten und Modelle</p>
+                    </div>
+
+                    <div class="feature-card glass-card" data-tilt>
+                        <i class="ri-cloud-line"></i>
+                        <h3>Cloud-Integration</h3>
+                        <p>Nahtlose Integration mit allen gängigen Cloud-Diensten</p>
+                    </div>
+
+                    <div class="feature-card glass-card" data-tilt>
+                        <i class="ri-customer-service-2-line"></i>
+                        <h3>Support</h3>
+                        <p>24/7 technischer Support und regelmäßige Updates</p>
+                    </div>
+
+                    <div class="feature-card glass-card" data-tilt>
+                        <i class="ri-tools-line"></i>
+                        <h3>Anpassbar</h3>
+                        <p>Flexible Anpassung an Ihre individuellen Bedürfnisse</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Section -->
+            <div class="pricing-section">
+                <div class="section-header">
+                    <span class="section-tag">Preise</span>
+                    <h2 class="section-title">Wählen Sie Ihr Paket</h2>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card glass-card" data-tilt>
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <div class="price">
+                                <span class="amount">29</span>
+                                <span class="currency">€</span>
+                                <span class="period">/Monat</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="ri-check-line"></i> Basis Funktionen</li>
+                            <li><i class="ri-check-line"></i> 1 Benutzer</li>
+                            <li><i class="ri-check-line"></i> 5GB Speicher</li>
+                            <li><i class="ri-check-line"></i> Email Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">Jetzt starten</a>
+                    </div>
+
+                    <div class="pricing-card featured glass-card" data-tilt>
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <div class="price">
+                                <span class="amount">79</span>
+                                <span class="currency">€</span>
+                                <span class="period">/Monat</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="ri-check-line"></i> Alle Funktionen</li>
+                            <li><i class="ri-check-line"></i> 5 Benutzer</li>
+                            <li><i class="ri-check-line"></i> 50GB Speicher</li>
+                            <li><i class="ri-check-line"></i> Premium Support</li>
+                            <li><i class="ri-check-line"></i> API Zugang</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Jetzt starten</a>
+                    </div>
+
+                    <div class="pricing-card glass-card" data-tilt>
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <div class="price">
+                                <span class="amount">199</span>
+                                <span class="currency">€</span>
+                                <span class="period">/Monat</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="ri-check-line"></i> Alle Funktionen</li>
+                            <li><i class="ri-check-line"></i> Unbegrenzte Benutzer</li>
+                            <li><i class="ri-check-line"></i> 500GB Speicher</li>
+                            <li><i class="ri-check-line"></i> 24/7 Support</li>
+                            <li><i class="ri-check-line"></i> Dedizierter Account Manager</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">Kontaktieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section glass-card">
+                <h2>Bereit loszulegen?</h2>
+                <p>Testen Sie unsere Software 30 Tage kostenlos und unverbindlich</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <span>Kostenlos testen</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">Beratungsgespräch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><i class="ri-mail-line"></i> info@innovate3d-labs.de</li>
+                        <li><i class="ri-phone-line"></i> +49 (0) 123 456789</li>
+                        <li><i class="ri-map-pin-line"></i> München, Deutschland</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="/impressum">Impressum</a></li>
+                        <li><a href="/datenschutz">Datenschutz</a></li>
+                        <li><a href="/agb">AGB</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tilt.js"></script>
+</body>
+</html>

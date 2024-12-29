@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - Innovate3D-Labs</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- GSAP für Animationen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle" aria-label="Theme Toggle">
+            <i class="ri-sun-line light-icon"></i>
+            <i class="ri-moon-line dark-icon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/" class="logo-text">Innovate3D-Labs</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link active">Über uns</a>
+                <a href="services.html" class="nav-link">Dienstleistungen</a>
+                <a href="partner.html" class="nav-link">Partner</a>
+                <a href="software.html" class="nav-link">Software</a>
+                <a href="contact.html" class="nav-link">Kontakt</a>
+            </div>
+
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Über uns">Über uns</h1>
+            <p class="hero-subtitle">Lernen Sie unser Team kennen</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-intro glass-card">
+                <h2>Unsere Geschichte</h2>
+                <p>Seit unserer Gründung im Jahr 2015 haben wir uns der Innovation im 3D-Druck verschrieben. Was als kleine Werkstatt begann, hat sich zu einem führenden Unternehmen in der additiven Fertigung entwickelt.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Zufriedene Kunden</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Experten</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Jahre Erfahrung</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="section-header">
+                <span class="section-tag">Das Team</span>
+                <h2 class="section-title">Unsere Experten</h2>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card glass-card" data-tilt>
+                    <div class="member-image">
+                        <img src="images/team/thomas.jpg" alt="Thomas Eglseder">
+                        <div class="social-overlay">
+                            <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                            <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Thomas Eglseder</h3>
+                        <span class="position">CEO & Technischer Leiter</span>
+                        <p>Experte für 3D-Druck Technologie und Softwareentwicklung. Verantwortlich für technische Innovation und Produktentwicklung.</p>
+                    </div>
+                </div>
+
+                <div class="team-card glass-card" data-tilt>
+                    <div class="member-image">
+                        <img src="images/team/jannik.jpg" alt="Jannik Kugler">
+                        <div class="social-overlay">
+                            <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                            <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Jannik Kugler</h3>
+                        <span class="position">CEO & Geschäftsführer</span>
+                        <p>Verantwortlich für Geschäftsentwicklung und Kundenbeziehungen. Experte für strategische Planung und Unternehmenswachstum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="values-section">
+                <div class="section-header">
+                    <span class="section-tag">Unsere Werte</span>
+                    <h2 class="section-title">Was uns antreibt</h2>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card glass-card" data-tilt>
+                        <i class="ri-heart-line"></i>
+                        <h3>Innovation</h3>
+                        <p>Wir treiben die Entwicklung von 3D-Druck Technologien voran</p>
+                    </div>
+                    <div class="value-card glass-card" data-tilt>
+                        <i class="ri-lightbulb-line"></i>
+                        <h3>Qualität</h3>
+                        <p>Höchste Standards in allen unseren Produkten und Dienstleistungen</p>
+                    </div>
+                    <div class="value-card glass-card" data-tilt>
+                        <i class="ri-team-line"></i>
+                        <h3>Kundenfokus</h3>
+                        <p>Ihre Anforderungen stehen im Mittelpunkt unseres Handelns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><i class="ri-mail-line"></i> info@innovate3d-labs.de</li>
+                        <li><i class="ri-phone-line"></i> +49 (0) 123 456789</li>
+                        <li><i class="ri-map-pin-line"></i> München, Deutschland</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="/impressum">Impressum</a></li>
+                        <li><a href="/datenschutz">Datenschutz</a></li>
+                        <li><a href="/agb">AGB</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tilt.js"></script>
+</body>
+</html>

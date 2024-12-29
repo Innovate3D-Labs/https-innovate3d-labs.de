@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienstleistungen - Innovate3D-Labs</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- GSAP für Animationen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle" aria-label="Theme Toggle">
+            <i class="ri-sun-line light-icon"></i>
+            <i class="ri-moon-line dark-icon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/" class="logo-text">Innovate3D-Labs</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">Über uns</a>
+                <a href="services.html" class="nav-link active">Dienstleistungen</a>
+                <a href="partner.html" class="nav-link">Partner</a>
+                <a href="software.html" class="nav-link">Software</a>
+                <a href="contact.html" class="nav-link">Kontakt</a>
+            </div>
+
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Dienstleistungen">Dienstleistungen</h1>
+            <p class="hero-subtitle">Professionelle 3D-Druck Lösungen</p>
+        </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="services-content">
+        <div class="container">
+            <!-- Main Services -->
+            <div class="services-grid">
+                <div class="service-card glass-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="ri-printer-cloud-line"></i>
+                    </div>
+                    <h3>3D-Druck Service</h3>
+                    <p>Professioneller 3D-Druck Service mit modernster Technologie</p>
+                    <ul class="service-features">
+                        <li><i class="ri-check-line"></i> Hochpräzisionsdruck</li>
+                        <li><i class="ri-check-line"></i> Verschiedene Materialien</li>
+                        <li><i class="ri-check-line"></i> Schnelle Lieferung</li>
+                        <li><i class="ri-check-line"></i> Qualitätskontrolle</li>
+                        <li><i class="ri-check-line"></i> Maßgeschneiderte Lösungen</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Anfrage stellen</a>
+                </div>
+
+                <div class="service-card glass-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="ri-printer-line"></i>
+                    </div>
+                    <h3>3D-Drucker Herstellung</h3>
+                    <p>Maßgeschneiderte 3D-Drucker für Ihre speziellen Anforderungen</p>
+                    <ul class="service-features">
+                        <li><i class="ri-check-line"></i> Kundenspezifische Entwicklung</li>
+                        <li><i class="ri-check-line"></i> Industriestandard-Qualität</li>
+                        <li><i class="ri-check-line"></i> Innovative Technologie</li>
+                        <li><i class="ri-check-line"></i> After-Sales Support</li>
+                        <li><i class="ri-check-line"></i> Wartungsservice</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Anfrage stellen</a>
+                </div>
+
+                <div class="service-card glass-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="ri-tools-line"></i>
+                    </div>
+                    <h3>Wartung & Reparatur</h3>
+                    <p>Professioneller Service für 3D-Drucker aller Marken</p>
+                    <ul class="service-features">
+                        <li><i class="ri-check-line"></i> Vor-Ort Service</li>
+                        <li><i class="ri-check-line"></i> Schnelle Reaktionszeit</li>
+                        <li><i class="ri-check-line"></i> Originalersatzteile</li>
+                        <li><i class="ri-check-line"></i> Wartungsverträge</li>
+                        <li><i class="ri-check-line"></i> Notfall-Service</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Service buchen</a>
+                </div>
+
+                <div class="service-card glass-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="ri-customer-service-2-line"></i>
+                    </div>
+                    <h3>Beratung & Support</h3>
+                    <p>Experten-Beratung für Ihre 3D-Druck Projekte</p>
+                    <ul class="service-features">
+                        <li><i class="ri-check-line"></i> Individuelle Beratung</li>
+                        <li><i class="ri-check-line"></i> Technischer Support</li>
+                        <li><i class="ri-check-line"></i> Schulungen</li>
+                        <li><i class="ri-check-line"></i> Projektplanung</li>
+                        <li><i class="ri-check-line"></i> Machbarkeitsstudien</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Beratung anfragen</a>
+                </div>
+            </div>
+
+            <!-- Process Section -->
+            <div class="process-section">
+                <div class="section-header">
+                    <span class="section-tag">Unser Prozess</span>
+                    <h2 class="section-title">Wie wir arbeiten</h2>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step glass-card" data-tilt>
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><i class="ri-discuss-line"></i></div>
+                        <h3>Beratung</h3>
+                        <p>Wir analysieren Ihre Anforderungen und beraten Sie zu den besten Lösungen</p>
+                    </div>
+
+                    <div class="process-step glass-card" data-tilt>
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><i class="ri-draft-line"></i></div>
+                        <h3>Planung</h3>
+                        <p>Detaillierte Projektplanung und Auswahl der optimalen Technologie</p>
+                    </div>
+
+                    <div class="process-step glass-card" data-tilt>
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><i class="ri-printer-line"></i></div>
+                        <h3>Produktion</h3>
+                        <p>Hochqualitative Fertigung unter strengen Qualitätskontrollen</p>
+                    </div>
+
+                    <div class="process-step glass-card" data-tilt>
+                        <div class="step-number">4</div>
+                        <div class="step-icon"><i class="ri-check-double-line"></i></div>
+                        <h3>Qualitätskontrolle</h3>
+                        <p>Gründliche Prüfung und Dokumentation aller Ergebnisse</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Häufig gestellte Fragen</h2>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item glass-card">
+                        <div class="faq-question">
+                            <h3>Welche Materialien können gedruckt werden?</h3>
+                            <i class="ri-add-line"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Wir bieten eine breite Palette an Materialien, darunter PLA, ABS, PETG, TPU, Nylon und verschiedene Verbundwerkstoffe. Die Wahl des Materials hängt von Ihren spezifischen Anforderungen ab.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <div class="faq-question">
+                            <h3>Wie lange dauert ein typischer Druckauftrag?</h3>
+                            <i class="ri-add-line"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die Druckzeit variiert je nach Größe, Komplexität und gewähltem Material. Kleinere Objekte können in wenigen Stunden gedruckt werden, während größere Projekte mehrere Tage in Anspruch nehmen können.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <div class="faq-question">
+                            <h3>Bieten Sie Expresslieferung an?</h3>
+                            <i class="ri-add-line"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ja, wir bieten einen Express-Service für dringende Aufträge an. Kontaktieren Sie uns für weitere Details und Verfügbarkeit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><i class="ri-mail-line"></i> info@innovate3d-labs.de</li>
+                        <li><i class="ri-phone-line"></i> +49 (0) 123 456789</li>
+                        <li><i class="ri-map-pin-line"></i> München, Deutschland</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="/impressum">Impressum</a></li>
+                        <li><a href="/datenschutz">Datenschutz</a></li>
+                        <li><a href="/agb">AGB</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tilt.js"></script>
+</body>
+</html>
